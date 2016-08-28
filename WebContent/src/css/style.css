@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+html, body, header, nav, main, section, footer, h1, h2, h3, p, div, span,
+	ul, li, a, form, label, input {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+
+/* Header ------------------------------------------------------------------------------------- */
+header {
+	height: 140px;
+	width: 100%;
+	/*background-color: red;*/
+	background-image: url('../img/img-ecole-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header h1 {
+	margin-left: 2%;
+	padding-top: 2%;
+	color: white;
+}
+
+header h4 {
+	margin-left: 2%;
+	color: white;
+}
+
+/* Navigation ------------------------------------------------------------------------------------- */
+nav {
+	/*height: 44px;*/
+	width: 100%;
+	background-color: #1C4A70;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+nav ul {
+	margin-left: 2%;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav  a {
+	font-variant: small-caps;
+	/*padding: 5% 20px 5% 20px;*/
+	padding: 10px 20px;
+	color: #FFFFFF;
+}
+
+nav a:link, nav a:visited {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+	background-color: #0B78D2;
+}
+
+/* Main & Sections ------------------------------------------------------------------------------------- */
+main {
+	padding: 2% 2% 2% 2%;
+	background-color: #fcf4dc;
+}
+
+hr {
+	border: 1px solid #0B78D2;
+	width: 20%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+main section h2 {
+	text-align: center;
+	color: #1C4A70;
+	margin: 1% 0% 1% 0%;
+}
+
+main section h3 {
+	text-align: left;
+	/*padding-top:2%;*/
+	color: #0B78D2;
+	/*margin-left:2%;*/
+	margin: 1% 0% 1% 0%;
+}
+
+main section p {
+	margin: 1% 0% 1% 0%;
+}
+
+.addButton {
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	float: right;
+	padding: 0.5% 2% 0.5% 2%;
+	color: #0B78D2;
+	background-color: white;
+	border: solid 1px #0B78D2;
+	font-weight: bold;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 6px;
+	border-radius: 7px;
+}
+
+.addButton:hover {
+	color: white;
+	background-color: #0B78D2;
+	border: solid 1px white;
+}
+
+.clear {
+	clear: both;
+	/*margin-top:8%;*/
+}
+
+.error_msg {
+	color: red;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* Table ------------------------------------------------------------------------------------- */
+table {
+	margin: 0 auto;
+	border: 1px solid #1C4A70;
+	padding: 2%;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 10px;
+	border: 1px solid #1C4A70;
+	border-bottom: 1px solid #1C4A70;
+	font-weight: normal;
+	width: 140px;
+	background-color: #0B78D2;
+	color: white;
+}
+
+th:last-child {
+	width: 200px;
+}
+
+tbody td {
+	text-align: center;
+}
+
+tbody tr {
+	background: white;
+}
+
+tbody tr:nth-child(4n+1) {
+	background: #B4D7F4;
+}
+
+td {
+	border: 1px solid #1C4A70;
+	margin: 0px;
+	width: 100px;
+}
+
+.buttonInfo, .buttonModif, .buttonDelete {
+	padding: 0.5% 2% 0.5% 2%;
+	color: #0B78D2;
+	background-color: white;
+	border: solid 1px #0B78D2;
+	font-weight: bold;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 2px;
+	border-radius: 3px;
+}
+
+.buttonInfo:hover, .buttonModif:hover, .buttonDelete:hover {
+	color: white;
+	background-color: #0B78D2;
+	border: solid 1px white;
+}
+
+.info {
+	text-align: left;
+	background: #E3F1FD;
+}
+
+.info li:nth-child(2n+1) {
+	background: #E3F1FD;
+}
+
+.info ul {
+	list-style: none;
+}
+
+.info ul li {
+	display: block;
+	background-color: #85B2D7;
+}
+
+.info a {
+	padding: 5px 10px;
+	color: black;
+}
+
+.info a:link, nav a:visited {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.info a:hover, nav a:active {
+	background-color: #1C4A70;
+	font-weight: bold;
+	color: white;
+}
+
+/* Forms --------------------------------------------------------------------------------------- */
+form {
+	width: 70%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+fieldset {
+	padding: 10px;
+	border: 1px #0B78D2 solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 6px;
+	border-radius: 7px;
+}
+
+legend {
+	font-weight: bold;
+	color: #0B78D2;
+}
+
+.liste form label {
+	width: 200px;
+	margin: 1% 1% 1% 2%;
+}
+
+form select {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #E3F1FD;
+	border: 1px #999 solid;
+}
+
+form input {
+	margin: 0.5% 4% 0.5% 1%;
+	border: 1px #999 solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #E3F1FD;
+	height: 22px;
+	font-size: 1.1em;
+	font-family: "Times New Roman", Times, serif;
+}
+
+form p, form h4 {
+	padding-left: 1%;
+}
+
+form h4 {
+	color: #0B78D2;
+}
+
+form input.sansLabel {
+	padding: 0.5% 2% 0.5% 2%;
+	color: #0B78D2;
+	background-color: white;
+	border: solid 1px #0B78D2;
+	font-weight: bold;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 6px;
+	border-radius: 7px;
+	height: 30px;
+	font-family: Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+form input.sansLabel:hover {
+	color: white;
+	background-color: #0B78D2;
+	border: solid 1px white;
+}
+
+form .requis {
+	color: #c00;
+}
+
+form
+.erreur {
+	color: #900;
+}
+
+form .succes {
+	color: #090;
+}
+
+#cp1, #cp2 {
+	width: 80px;
+}
+
+/* Footer --------------------------------------------------------------------------------------- */
+footer {
+	padding-top: 2%;
+	padding-left: 2%;
+	height: 100px;
+	background-color: #1C4A70;
+	color: white;
+}
